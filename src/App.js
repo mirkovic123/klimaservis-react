@@ -1,4 +1,3 @@
-import './App.css';
 import ZakaziServis from './pages/ZakaziServis';
 
 function App() {
