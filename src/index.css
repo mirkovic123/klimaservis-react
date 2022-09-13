@@ -21,5 +21,22 @@
   margin-left: 430px;
   font-size: 20px;
   width: 1060px;
+}
 
+nav {
+  border-bottom: 2px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 40px;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#trmn {
+  margin-left: 875px;
 }
