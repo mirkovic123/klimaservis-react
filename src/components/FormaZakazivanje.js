@@ -1,7 +1,22 @@
 import { useState } from 'react'
 
 
-const FormaZakazivanje = () => {
+const FormaZakazivanje = (props) => {
+
+    var zauzetiDatumi = props.datumi;
+
+    const proveriTermin = (servis) => {
+        var zauzet = false;
+        for (let i = 0; i < zauzetiDatumi.length; i++) {
+            if (servis.datum === zauzetiDatumi[i]) {
+                alert('Datum je zauzet!')
+                zauzet = true
+                break
+            }
+        }
+        if (!zauzet)
+            alert('Servis je uspešno rezervisan')
+    }
 
     const [servis, setServis] = useState({
         ime: '',
@@ -41,6 +56,7 @@ const FormaZakazivanje = () => {
     return (
         <div className="formazakazivanje-div">
 
+
             <form className="form text-center">
 
                 <div>
@@ -79,7 +95,7 @@ const FormaZakazivanje = () => {
 
             </form>
 
-            <button type="button" className="btn btn-dark" id="button-check">PROVERI TERMIN</button>
+            <button type="button" onClick={() => proveriTermin(servis)} className="btn btn-dark" id="button-check">PROVERI</button>
 
         </div>
     )
