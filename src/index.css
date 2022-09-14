@@ -38,7 +38,11 @@ nav a:visited {
 }
 
 #trmn {
-  margin-left: 875px;
+  margin-left: 830px;
+}
+
+#knt {
+  margin-left: 20px;
 }
 
 .ns {
@@ -46,4 +50,8 @@ nav a:visited {
   margin-top: 40px;
   margin-left: 750px;
   margin-bottom: -50px;
+}
+
+#forma {
+  margin-bottom: 50px;
 }

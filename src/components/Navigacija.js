@@ -5,6 +5,7 @@ const Navigacija = () => {
         <div className="navigacija-div">
             <nav>
                 <Link to="/" id='trmn'>SERVIS</Link>
+                <Link to="/kontakt" id='knt'>KONTAKT</Link>
             </nav>
         </div>
     )
