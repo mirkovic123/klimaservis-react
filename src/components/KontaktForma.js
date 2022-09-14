@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const KontaktForma = () => {
+const KontaktForma = (props) => {
 
     const [forma, setForma] = useState({
         ime: '',
@@ -57,7 +57,7 @@ const KontaktForma = () => {
 
             </form>
 
-            <button type="button" className="btn btn-dark" id="button-check">POSALJI</button>
+            <button type="button" onClick={() => props.alertFunkcija(forma)} className="btn btn-dark" id="button-check">POSALJI</button>
 
 
 
